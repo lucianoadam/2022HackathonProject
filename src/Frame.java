@@ -8,10 +8,11 @@ import javax.swing.border.Border;
 
 public class Frame extends JFrame{
 
-    public Frame(){
-        JFrame frame = new JFrame();
+    JFrame frame = new JFrame();
+
+    public Frame(String title){
         frame.setSize(400, 400);
-        frame.setTitle("Gibberish");
+        frame.setTitle(title);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
