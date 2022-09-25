@@ -12,9 +12,12 @@ public class ASCIIDic {
         }
     }
 
-    public static int getLetterIndex(char c){
+    public int getLetterIndex(char c){
 
-        return newCharset.
+        for (int i = 0; i < CHARSET.length; i++) {
+            if (newCharset[i] == c) return i;
+        }
+        return -1;
 
     }
 
